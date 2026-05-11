@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-size: 1.25rem; /* Збільшено розмір всього тексту */
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   color: #3e2c1c;
@@ -15,6 +16,8 @@ body {
 }
 
 .nav-link {
+  font-size: 1.4rem !important; /* Збільшено розмір кнопок на панелі */
+  padding: 10px 20px !important;
   color: #e6d6c3 !important;
   transition: all 0.3s ease;
 }
@@ -108,4 +111,28 @@ body {
 .menu-item-desc {
   font-size: 14px;
   color: #5a3e2b;
+}
+/* КНОПКА ПОВЕРНЕННЯ ВГОРУ */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1000;
+  background-color: #4b2e1e;
+  color: #e6d6c3;
+  border: 2px solid #e6d6c3;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+#btn-back-to-top:hover {
+  background-color: #e6d6c3;
+  color: #4b2e1e;
+  transform: scale(1.1);
 }
