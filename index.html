@@ -8,16 +8,94 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
-    /* Збільшені кнопки в навігації */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      letter-spacing: 1px;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto 10px;
+    }
+
+    .section-dark p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
     .navbar-nav .nav-link {
       font-size: 1.25rem;
       padding: 0.75rem 1.25rem;
     }
 
-    /* Кнопка меню по центру hero */
     .hero-menu-btn {
-      margin-top: 30px;
+      margin: 35px 0 25px;
+    }
+
+    /* Carousel styling in site theme */
+    .carousel {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      padding: 30px 10px 10px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.3);
+      border-radius: 10px;
+    }
+
+    .carousel article {
+      min-width: 320px;
+      background: rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      scroll-snap-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .carousel article:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+
+    .carousel h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      margin: 18px 18px 8px;
+    }
+
+    .carousel p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0 18px 20px;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -61,6 +139,30 @@
       <a href="menu.html" class="btn btn-outline-light btn-lg px-5 py-3" style="border-width:2px; letter-spacing:1px;">
         Меню
       </a>
+    </div>
+
+    <!-- Photo carousel -->
+    <div class="carousel" mask>
+      <article>
+        <img src="https://images.pexels.com/photos/635699/pexels-photo-635699.jpeg" alt="">
+        <h2>Інтерʼєр</h2>
+        <p>Затишна атмосфера для приємного відпочинку.</p>
+      </article>
+      <article>
+        <img src="https://images.pexels.com/photos/7168798/pexels-photo-7168798.jpeg" alt="">
+        <h2>Домашня кухня</h2>
+        <p>Страви, приготовані з душею.</p>
+      </article>
+      <article>
+        <img src="https://images.pexels.com/photos/4099179/pexels-photo-4099179.jpeg" alt="">
+        <h2>Теплі зустрічі</h2>
+        <p>Ідеальне місце для сімʼї та друзів.</p>
+      </article>
+      <article>
+        <img src="https://images.pexels.com/photos/2072158/pexels-photo-2072158.jpeg" alt="">
+        <h2>Святкування</h2>
+        <p>Особливі події у теплій атмосфері.</p>
+      </article>
     </div>
   </div>
 </section>
