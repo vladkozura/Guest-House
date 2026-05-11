@@ -169,3 +169,16 @@ body {
         border-width: 3px;
     }
 }
+
+.menu-diagonal-photo {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    object-fit: cover;
+    
+    /* Видалено або змінено на none */
+    border: none; 
+    
+    border-radius: 40px; /* Заокруглення можна залишити, якщо воно вам подобається */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Тінь також можна залишити для об'єму */
+}
