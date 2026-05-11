@@ -136,3 +136,36 @@ body {
   color: #4b2e1e;
   transform: scale(1.1);
 }
+
+
+/* Контейнер для центрування */
+.menu-hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px; /* Відступи, щоб рамку було видно на мобільних */
+}
+
+/* Стиль фото: розтягнуте по ширині з квадратними пропорціями */
+.menu-diagonal-photo {
+    width: 100%;
+    max-width: 1200px; /* Обмежуємо на дуже великих екранах для якості */
+    height: 500px; /* Висота банера */
+    object-fit: cover; /* Фото заповнює простір, не деформуючись */
+    
+    /* Рамка в стилі вашого сайту */
+    border: 5px solid #6f4e37; /* Колір ліній вашого меню */
+    border-radius: 40px; /* Заокруглені боки */
+    
+    /* Тінь для ефекту об'єму */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Адаптація для телефонів */
+@media (max-width: 768px) {
+    .menu-diagonal-photo {
+        height: 300px;
+        border-radius: 20px;
+        border-width: 3px;
+    }
+}
