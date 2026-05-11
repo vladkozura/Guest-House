@@ -137,17 +137,6 @@ body {
   transform: scale(1.1);
 }
 
-.menu-header-img {
-  width: 300px; /* Можна змінити розмір за бажанням */
-  height: 300px;
-  object-fit: cover; /* Щоб фото не розтягувалося, а заповнювало квадрат */
-  border-radius: 25px; /* Заокруглені боки */
-  border: 4px solid #6f4e37; /* Колір рамки в тон вашого меню */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легка тінь для об'єму */
-  margin-top: 20px;
-}
-
-
 .menu-banner-container {
   width: 100%;
   padding: 0 15px; /* Невеликий відступ від країв екрану, щоб було видно рамку */
