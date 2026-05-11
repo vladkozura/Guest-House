@@ -154,3 +154,14 @@ body {
 #btn-back-to-top:hover {
     background-color: #362115;
 }
+
+.contact-info p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.contact-info strong {
+  color: #6f4e37; /* Колір у стилі вашого меню */
+  display: block;
+  margin-bottom: 5px;
+}
