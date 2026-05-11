@@ -1,3 +1,5 @@
+– це штучний інтелект, і він може помилятися.
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -2243,5 +2245,30 @@
           <span class="price">250 ₴</span>
         </div>
 </section>
+
+<!-- Кнопка повернення на початок -->
+<button type="button" id="btn-back-to-top" title="Наверх">
+  ↑
+</button>
+
+<script>
+  let mybutton = document.getElementById("btn-back-to-top");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  mybutton.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
 </body>
 </html>
