@@ -137,13 +137,40 @@ body {
   transform: scale(1.1);
 }
 
-.menu-header-img { 
-  width: 300px; /* Можна змінити розмір за бажанням */
-  height: 300px;
-  object-fit: cover; /* Щоб фото не розтягувалося, а заповнювало квадрат */
-  border-radius: 25px; /* Заокруглені боки */
-  border: 4px solid #6f4e37; /* Колір рамки в тон вашого меню */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легка тінь для об'єму */
+
+.menu-banner-container {
+  width: 100%;
+  padding: 0 15px; /* Невеликий відступ від країв екрану, щоб було видно рамку */
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.full-width-banner {
+  width: 100%;
+  max-width: 1200px; /* Максимальна ширина, щоб фото не виглядало занадто розтягнутим на великих моніторах */
+  height: 450px; /* Висота банера */
+  object-fit: cover; /* Фото заповнює весь простір без деформації */
+  
+  /* Стилізована рамка */
+  border: 5px solid #6f4e37; 
+  border-radius: 30px; /* Закруглені боки */
+  
+  /* Тінь та ефекти */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Ефект при наведенні (опціонально) */
+.full-width-banner:hover {
+  transform: scale(1.01);
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+  .full-width-banner {
+    height: 250px;
+    border-radius: 15px;
+  }
 }
 
