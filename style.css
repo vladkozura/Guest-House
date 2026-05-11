@@ -137,7 +137,7 @@ body {
   transform: scale(1.1);
 }
 
-.menu-header-img {
+.menu-header-img { 
   width: 300px; /* Можна змінити розмір за бажанням */
   height: 300px;
   object-fit: cover; /* Щоб фото не розтягувалося, а заповнювало квадрат */
